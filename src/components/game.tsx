@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './game.css';
 import Timer from './timer';
 import Cell from './cell';
