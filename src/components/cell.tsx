@@ -1,4 +1,3 @@
-import { ReactElement, useEffect, useState } from "react";
 import './cell.css';
 
 import xImage from '../assets/x_small.svg';
