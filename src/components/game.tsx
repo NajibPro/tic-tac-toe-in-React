@@ -12,7 +12,7 @@ function Game(){
     function winner(): string {
         // Check rows
         for (let i = 0; i < 9; i += 3) {
-          if (cellValues[i] !== '' && cellValues[i] === cellValues[i + 1] && cellValues[i] === cellValues[i + 2]) {
+            if (cellValues[i] !== '' && cellValues[i] === cellValues[i + 1] && cellValues[i] === cellValues[i + 2]) {
             return cellValues[i]; 
           }
         }
@@ -41,7 +41,7 @@ function Game(){
     }
 
     function changeCellValue(cellNumber: number){
-        if(cellNumber >= 0 && cellNumber < 9 && !gameOver){
+        if((cellNumber >= 0 && cellNumber < 9 && !gameOver) && (cellValues[cellNumber] === "")){
             console.log("the winner is " + winner() + "you can't change the board now with your click");
             if(winner() !== '' || isTie()){
                 endGame();
