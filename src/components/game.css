@@ -8,6 +8,7 @@
     width: min(350px, 95%);
     align-items: center;
     gap: 25px;
+    overflow: visible;
 }
 
 .xo-image{
